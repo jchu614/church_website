@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Worship Jesus Bible Church</title>
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+			<link rel="stylesheet" href="/stylesheets/main.css">
+			<link rel="stylesheet" href="/stylesheets/navbar.css">
+			<link rel="stylesheet" href="/stylesheets/index.css">
+			<link rel="stylesheet" href="/stylesheets/blog.css">
+			<link rel="stylesheet" href="/stylesheets/login.css">
+			<link rel="stylesheet" href="/stylesheets/ministries.css">
+			<link rel="stylesheet" href="/stylesheets/members.css">
+			<link rel="stylesheet" href="/stylesheets/about.css">
+			<link rel="stylesheet" href="/stylesheets/small.css">
+			<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+		</head>
+		<body>
+			<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+				<div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active d-none d-md-block">
+							<a class="nav-link" style="padding-left: 4em" href="/"><img class="logo" src="/images/WJBC logo.png"><span id="logotext">WJBC</span></a>
+						</li>
+					</ul>
+				</div>
+				<div class="mx-auto order-0 d-md-none">
+					<a class="navbar-brand mx-auto nav-color dropdown-toggle" data-toggle="dropdown" href="#"><img class="logo" src="/images/WJBC logo.png"></a>
+						<% if(!currentUser){ %>
+							<div class="dropdown-menu dropdown-menu-center animate slideIn" id="small-menu">
+								<a href="/" class="dropdown-item">Home</a>
+								<a href="/about" class="dropdown-item">About Us</a>
+								<a href="/ministries" class="dropdown-item">Ministries</a>
+								<a href="/register" class="dropdown-item">Register</a>
+								<a href="/login" class="dropdown-item">Login</a>				
+							</div>
+						<% } else if(currentUser && currentUser.isAdmin){ %>
+							<div class="dropdown-menu dropdown-menu-center animate slideIn" id="small-menu">
+								<a href="#" class="dropdown-item">Admin: <%= currentUser.username %></a>
+								<a href="/logout" class="dropdown-item">Log Out</a>
+							</div>
+						<% } else { %>
+							<div class="dropdown-menu dropdown-menu-center animate slideIn" id="small-menu">
+								<a href="#" class="dropdown-item">User: <%= currentUser.username %></a>
+								<a href="/logout" class="dropdown-item">Log Out</a>
+							</div>
+						<% } %>
+				</div>
+
+				<div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+					<ul id="navlinks" class="navbar-nav ml-auto">
+						<% if(!currentUser){ %>
+							<li class="nav-item">
+									<a class="nav-link" href="/about">About Us</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/ministries">Ministries</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/register">Register</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="/login"><span id="give">Login</span></a>
+							</li>
+						<% } else if(currentUser && currentUser.isAdmin){ %> 
+							<li><a class="nav-color" href="#">Admin: <%= currentUser.username %></a></li>
+							<li><a class="nav-color" href="/logout">Logout</a></li>
+						<% } else { %>
+							<li><a class="nav-color" href="#">User: <%= currentUser.username %></a></li>
+							<li><a class="nav-color" href="/logout">Logout</a></li>
+						<% }; %>
+					</ul>
+				</div>
+			</nav>

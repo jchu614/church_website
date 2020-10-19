@@ -1,0 +1,72 @@
+.about-body {
+	font-family: Lato;
+    font-size: 18px;
+    letter-spacing: .01em;
+    line-height: 1.7em;
+    text-transform: none;
+    color: #222;
+}
+
+.about-btn {
+	border: 1px #cc8d0f solid;
+	color: #cc8d0f;
+	font-family: Roboto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+	margin: auto 7em 1em;
+}
+
+.about-btn:hover {
+	color: white;
+	background-color: #cc8d0f;
+}
+
+.about-buttons {
+	margin-top: 3em;
+	margin-bottom: 0;
+}
+
+#about-container {
+	padding: 2em;
+	max-width: 854px;	
+}
+
+#about-header {
+	font-family: Roboto Condensed;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 94px;
+    letter-spacing: .03em;
+    line-height: 1em;
+    text-transform: uppercase;
+	color: #4a4a4a;
+}
+
+#about-header-2 {
+    font-family: Roboto Slab;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    letter-spacing: .1em;
+    line-height: 1.55em;
+    text-transform: uppercase;
+	color: #e37263;
+	margin-top: 5em;
+}
+
+#about-header-3 {
+	font-family: Roboto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    letter-spacing: .07em;
+    line-height: 1.2em;
+    text-transform: uppercase;
+	margin-bottom: 1.5em;
+	margin-top: 1.5em;
+	margin-left: 1.7em;
+	color: #4a4a4a;
+}

@@ -1,0 +1,90 @@
+.navbar {
+	background-color: #FCFCFC !important;
+}
+
+.nav-color {
+	color: rgba(0,0,0,.5);
+}
+
+.logo {
+	height: 4.3em;
+	width: auto;
+}
+
+#logotext {
+	padding: 20px;
+	padding-right: 5px;
+	font-size: 35px;
+	font-family: Lato;
+	font-weight: 900;
+	letter-spacing: 0.1em;
+}
+
+#give {
+	color: red;
+}
+
+#navlinks {
+	font-family: Roboto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+/* DROPDOWN MENU STYLING */
+.dropdown-toggle::after {
+    content: none;
+}
+.dropdown-item {
+	font-family: Lato;
+	letter-spacing: .15em;
+}
+
+.dropdown-menu {
+	background-color: #f4f4f4;
+	height: 116px;
+}
+
+.dropdown-menu-center {
+  left: 50% !important;
+  right: auto !important;
+  text-align: center !important;
+  transform: translate(-50%, 0) !important;
+}
+
+#small-menu {
+	height: 180px;
+	width: 100%;
+	margin-top: 0;
+	padding-top: 0;
+	border: 0;
+	background-color: #FCFCFC;
+	border-radius: 0;
+	
+}
+
+.animate {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0;
+  }
+}
+
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}

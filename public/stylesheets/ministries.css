@@ -1,0 +1,76 @@
+#ministry-jumbo {
+	background: url("https://live.staticflickr.com/137/324445535_6e14846f3a_b.jpg") top right no-repeat;
+	background-size: 99.99%;
+	background-position: center;
+	background-attachment: fixed;
+	margin-bottom: 8em;
+}
+
+.ministry-head {
+font-family: Roboto Condensed;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 94px;
+    letter-spacing: .03em;
+    line-height: 1em;
+    text-transform: uppercase;
+	text-align: left;
+	padding-top: .2em;	
+	color: #f4f4f4;
+}
+
+.top-head {
+	padding-top: 1.3em;
+}
+
+.ministry-body {
+	margin-bottom: 10px;
+	font-family: Roboto Condensed;
+    font-size: 18px;
+    letter-spacing: .01em;
+    line-height: 1.7em;
+    text-transform: none;
+    color: #f4f4f4;
+}
+
+.min-buttons {
+	border: 1px #cc8d0f solid;
+	color: #cc8d0f;
+	background-color: rgba(249, 246, 253, 0.7);
+	font-family: Roboto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+	margin: .1em 8em;
+	margin-bottom: 10px;
+}
+
+.min-buttons:hover {
+	color: #f4f4f4;
+	background-color: #cc8d0f;
+}
+
+.lab-header {
+	margin-top: 1em;
+	font-family: Roboto Slab;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    letter-spacing: .1em;
+    line-height: 1.55em;
+    text-transform: uppercase;
+	color: #e37263;
+}
+
+.lab-body {
+	font-family: Lato;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    letter-spacing: .01em;
+    line-height: 1.7em;
+    text-transform: none;
+    color: #222;
+}

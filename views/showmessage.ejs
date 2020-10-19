@@ -1,0 +1,48 @@
+<%- include("./partials/header") %>
+<header class="mainpage-jumbo">
+	<div 
+		style="background: url('<%= message.imageUrl %>') center no-repeat;
+		height: 425px;
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+		background-attachment: scroll;
+		margin-bottom: 4em;"
+		 >
+		<div class="container">
+			<h1 class="ministry-head top-head tshadow"><%= message.header %></h1>
+		</div>
+	</div>
+</header>	
+	<div style="display: flex; justify-content: center;">
+		<div class="blog">
+			<div class="thumbnail">
+				<div class="caption-full">
+					<p style="padding-bottom: 20px;">
+						<em>Submitted By <%= message.author.username %></em>
+					</p>
+					<p>
+						<%- message.body %>
+					</p>
+				</div>
+			</div>
+			<div style="display: flex; justify-content: space-around; flex-direction: row;">
+				<% if(currentUser && message.author.id.equals(currentUser._id) || currentUser && currentUser.isAdmin){ %>
+				<a 
+				   class="btn btn-lg in-butt" 
+				   href="/messages/<%= message._id %>/edit"
+				   style="text-align: center; width: 100px; background-color: #c2c2c2;"
+				   >Edit
+				</a>
+				<form id="delete-form" action="/messages/<%= message._id %>?_method=DELETE" method="POST">
+					<button 
+						class="btn btn-lg in-butt"
+						style="text-align: center; width: 100px; background-color: #c2c2c2;"
+					>Delete
+					</button>
+				</form>
+			<% } %>
+			</div>	
+		</div>
+	</div>
+<%- include("./partials/footer") %>

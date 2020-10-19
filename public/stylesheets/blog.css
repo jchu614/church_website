@@ -1,0 +1,12 @@
+.blog {
+	width: 60%;
+	align-content: center;
+	background-color: #dfdfdf;
+	-webkit-box-shadow: 3px 11px 22px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 11px 22px 0px rgba(0,0,0,0.75);
+	box-shadow: 3px 11px 22px 0px rgba(0,0,0,0.75);
+	padding: 35px;
+	margin-bottom: 15px;
+	transform: translate(0, -110px);
+	z-index: 2;
+}

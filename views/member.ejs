@@ -1,0 +1,43 @@
+<%- include("./partials/header") %>
+<header class="jumbotron mainpage-jumbo jumbo-image" id="message-jumbo">
+	<div class="container">
+		<h1 class="ministry-head top-head tshadow" id="mem-head">Member Message Board</h1>
+		<div class="text-center">
+			<a class="btn btn-lg post-butt tshadow" href="/messages/new">Post a New Member's Message</a>
+		</div>
+	</div>
+</header>	
+<div class="members">
+	<div class=" items row">
+		<% bibles.forEach(function(message){ %>
+			<div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 item-center">
+				<div class="item thumbnail">
+					<div class="overlay-image">
+						<a href="/messages/<%= message._id %>" style="text-decoration: none;">
+							<div>
+								<p class="text tshadow">Read More</p>
+							</div>
+							<img src="<%= message.imageUrl %>">
+						</a>
+					</div>
+					<div class="item-cap">
+						<h4>
+							<%= message.header %>
+						</h4>
+						<hr style="width: 88%; margin-bottom: 8px;">
+					</div>
+					<div class="message">
+						<p>
+							<div>
+								By <%= message.author.username %>
+							</div>
+						</p>
+					</div>
+				</div>
+			</div>
+		<% }); %>		
+	</div>
+<div>
+
+
+<%- include("./partials/footer") %>

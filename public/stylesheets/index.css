@@ -1,0 +1,130 @@
+/* BUTTON DESIGNS */
+.in-butt {
+	text-align: left;
+	text-shadow: 0px !important;
+	margin-left: 0px;
+	margin-top: 1em;
+	border: 1px #cc8d0f solid;
+	color: white;
+	background-color: rgba(249, 246, 253, 0.1);
+	font-family: Roboto Condensed;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+	border: 2px white solid;
+	padding: 1em;
+}
+
+.in-butt:hover {
+	color: #f4f4f4;
+	background-color: #cc8d0f;
+}
+
+/* CAROUSEL DESIGNS */
+.carousel-item {
+	height: 500px;
+}
+
+.carousel-caption p {
+	font-family: Roboto Condensed;
+	font-size: 24px;
+	text-align: left;
+	color: white;
+}
+
+.carousel-caption h5 {
+	text-align: left;
+	font-family: Roboto Condensed;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 70px;
+    letter-spacing: .03em;
+    line-height: 1em;
+    text-transform: uppercase;
+	color: white;
+}
+
+.mainpage-jumbo {
+	max-height: 500px;
+	padding: 0;
+	margin: 0;
+}
+
+.carousel-inner > .carousel-item > img { 
+	width:100%; 
+	max-height:500px;
+	object-fit: cover;
+}
+
+/* INDEX TWO, DAN QUOTE */
+#index-2 {
+	height: 400px;
+	text-align: center;
+	font-family: Times New Roman;
+	padding-top: 4em;
+	margin: 0;
+}
+
+/* INDEX 3, MISSIONS PORTION */
+#index-3 {
+	height: 600px;
+	width: auto;
+	background: url("https://cdn.pixabay.com/photo/2018/09/11/19/49/education-3670453_1280.jpg") top right no-repeat;
+	background-size: 99.99%;
+	background-position: center;
+	background-attachment: fixed;
+	margin-bottom: 0;
+}
+
+#index-3 h1 {
+	margin-top: 2em;
+	text-align: left;
+	font-family: Roboto Condensed;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 70px;
+    letter-spacing: .03em;
+    line-height: 1em;
+    text-transform: uppercase;
+	color: white;
+}
+
+#index-3 p {
+	margin: auto 2.5em;
+	font-family: Roboto Condensed;
+	font-size: 24px;
+	text-align: left;
+	color: white;
+}
+
+#index-4 {
+	margin-bottom: 0;
+	height: 450px;
+}
+
+.index-col {
+	font-family: Roboto Condensed;
+	color: #222;
+}
+
+#col-index-2 {
+	text-align: left;
+}
+
+.index-col h2 {
+	font-size: 30px;
+}
+
+#index-note {
+	margin-top: 2.9em;
+}
+
+.map {
+	height: 280px;
+	width: auto;
+	padding: 0;
+	margin: 0;
+	background-color: transparent;
+}
