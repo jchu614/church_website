@@ -42,19 +42,19 @@
     letter-spacing: .03em;
     line-height: 1em;
     text-transform: uppercase;
-	color: #4a4a4a;
+	color: #A9A9A9;
 }
 
 #about-header-2 {
     font-family: Roboto Slab;
     font-weight: 400;
     font-style: normal;
-    font-size: 15px;
-    letter-spacing: .1em;
+    font-size: 20px;
+    letter-spacing: .15em;
     line-height: 1.55em;
     text-transform: uppercase;
-	color: #e37263;
-	margin-top: 5em;
+	color: #AC1919;
+	padding-top: 8em;
 }
 
 #about-header-3 {
@@ -69,4 +69,13 @@
 	margin-top: 1.5em;
 	margin-left: 1.7em;
 	color: #4a4a4a;
+}
+
+#about-image {
+	padding: 0;
+	background: url("https://live.staticflickr.com/8068/8240341255_4384271520_b.jpg") top right no-repeat;
+	background-size: 99.99%;
+	background-position: center;
+	background-attachment: fixed;
+	margin-bottom: 0;
 }
