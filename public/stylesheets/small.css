@@ -13,6 +13,22 @@
 	.about-item-deco {
 		height: 240px;
 	}
+	.join-p {
+		font-size: 1.5em;
+		transform: translatey(-5vh);
+	}
+	.join-text {
+		font-size: 3.5em;
+	}
+	.join-div {
+		transform: translatey(-85vh);
+	}
+	.quote {
+		font-size: 1.9em;
+	}
+	.green-quotes {
+		padding: 100px 0;
+	}
 }
 @media (max-width: 1158px) {
 	.map img {
@@ -22,10 +38,10 @@
 		font-size: .8em;
 	}
 	#col-index-2 h1 {
-		font-size: 2.5em;
+		font-size: 2.4em;
 	}
 	#col-index-2 h2 {
-		font-size: 2em;
+		font-size: 1.9em;
 	}
 	#index-4 {
 		height: 380px;
@@ -43,6 +59,15 @@
 	}
 	#col-index-2 {
 		font-size: 75%;
+	}
+	.join-div {
+		transform: translatey(-8vh);
+		position: relative;
+		width: 100%;
+	}
+	.join-text {
+		text-align: left;
+		padding-left: 3vw;
 	}
 }
 
@@ -78,6 +103,12 @@
 	.about-item-deco {
 		height: 270px;
 		font-size: 15px;
+	}
+	.green-quotes {
+		padding: 60px 0;
+	}
+	.quote {
+		font-size: 1.4em;
 	}
 }
 @media (max-width: 830px) {
@@ -149,12 +180,15 @@
 	.item, .item img, .overlay-image {
 		width: 400px;
 	}
-	.ministry-head {
+	.join-text {
 		margin-top: 5px;
 		font-size: 40px;
 	}
-	.ministry-body {
+	.join-p {
 		font-size: 13px;
+	}
+	.header-spec {
+		transform: translatey(0px) !important;
 	}
 	.post-butt {
 		margin-top: 35px;
@@ -166,12 +200,23 @@
 		flex-direction: column-reverse;
 	}
 	#ministry-jumbo {
-		height: 360px;
-		margin-bottom: 60px;
-		background-size: cover;
+		height: 500px;
 	}
 	#message-jumbo {
 		background-size: cover;
+	}
+	.join-div {
+		transform: translatey(-29vh);
+		position: absolute;
+	}
+	.quotes {
+		transform: translatey(-22vh);
+	}
+	#img-div-1 {
+		transform: translatey(-20vh);
+	}
+	#img-div-2 {
+		transform: translatey(-45vh);
 	}
 }
 
