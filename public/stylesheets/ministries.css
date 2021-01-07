@@ -1,39 +1,182 @@
 #ministry-jumbo {
-	background: url("https://live.staticflickr.com/2815/10552714583_7ac455cc3f_b.jpg") top right no-repeat;
-	background-size: 99.99%;
+	background: url("/images/greyarrow.jpg") top right no-repeat;
+	background-size: 120%;
 	background-position: center;
-	background-attachment: fixed;
 	margin-bottom: 8em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 2;
+	overflow: show;
 }
 
+.jumbo-container {
+	height: 140vh;
+}
+
+/* QUOTES PAGE STYLING */
+.quotes {
+	display: block;
+	width: 100%;
+	padding: 0 8%;
+	position: relative;
+	z-index: 2;
+	margin-bottom: -154px;
+	transform: translatey(-50vh);
+}
+.green-quotes {
+	display: block;
+	position: relative;
+	padding: 150px 0;
+	top: -76px;
+	z-index: -1;
+	margin-bottom: -76px;
+	box-sizing: border-box;
+}
+.content-border {
+	background-color: #b4dbbf;
+	position: absolute;
+	box-sizing: border-box;
+	display: block;
+}
+.top {
+	height: 1px;
+	left: -24px;
+	right: -24px;
+	top: 0px;
+}
+
+.bottom {
+	height: 1px;
+	left: -24px;
+	right: -24px;
+	bottom: 0px;
+}
+.left {
+	width: 1px;
+	left: 0px;
+	bottom: -24px;
+	top: -24px;
+}
+
+.right {
+	width: 1px;
+	right: 0px;
+	bottom: -24px;
+	top: -24px;
+}
+
+.quote {
+	text-shadow: 0 0 100px #ffffff;
+    font-size: 2.2em;
+    line-height: 70px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #3e3e40;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin: 0px;
+}
+
+.quote span {
+	color: #b46357;
+	font-family: "Times New Roman";
+}
+
+#img-div-1 {
+	max-height: 400px;
+	height: auto;
+	width: 60%;
+	padding: 0;
+	margin: 0;
+	margin-right: 40%;
+	transform: translatey(-45vh);
+	overflow: hidden;
+	z-index: 3;
+	box-shadow: 0px 10px 13px -7px #000000, -2px -4px 36px 5px rgba(124,124,124,0);
+}
+#img-div-2 {
+	max-height: 400px;
+	height: auto;
+	width: 50%;
+	margin: 0;
+	margin-left: 40%;
+	margin-right: 10%;
+	background-color: blue;
+	transform: translatey(-55vh);
+	overflow: hidden;
+	z-index: -1;
+	position: relative;
+	box-shadow: 0px 10px 13px -7px #000000, 3px 16px 27px 7px rgba(124,124,124,0.49);
+}
+
+#img-div-3 {
+	max-height: 400px;
+	height: auto;
+	width: 50%;
+	margin: 0;
+	margin-left: 50%;
+	margin-right: 0%;
+	background-color: blue;
+	transform: translatey(-60vh);
+	overflow: hidden;
+	z-index: -2;
+	position: absolute;
+	box-shadow: 0px 10px 13px -7px #000000, 3px 16px 27px 7px rgba(124,124,124,0.49);
+}
+
+#img-div-1 img, #img-div-2 img, #img-div-3 img {
+	height: 100%;
+	width: 100%;
+}
+
+.join-div {
+	width: 40%;
+	transform: translatey(-90vh);
+	position: absolute;
+}
+.join-text {
+	font-size: 4.4em;
+}
+.join-p {
+	font-size: 1.8em;
+	text-align: left;
+	padding-left: 3vw;
+	padding-right: 1vw;
+	width: 100%;
+}
+/* WORD STYLING */
 .ministry-head {
-font-family: Roboto Condensed;
+	font-family: Roboto Condensed;
     font-weight: 700;
     font-style: normal;
-    font-size: 94px;
     letter-spacing: .03em;
     line-height: 1em;
     text-transform: uppercase;
-	text-align: left;
-	padding-top: .2em;	
-	color: #f4f4f4;
+	text-align: center;
+	color: #4E4E4E;
+	transform: translatey(-50px);
 }
-
-.top-head {
-	padding-top: 1.3em;
+.header-spec {
+	font-size: 3.5em;
 }
 
 .ministry-body {
 	margin-bottom: 10px;
 	font-family: Roboto Condensed;
-    font-size: 18px;
     letter-spacing: .01em;
     line-height: 1.7em;
     text-transform: none;
-    color: #f4f4f4;
+    color: #4E4E4E;
 	padding-bottom: 30px;
 }
-
+.body-spec {
+	font-size: 18px;
+	text-align: center;
+	width: 77%;
+}
+/* 
 .min-buttons {
 	border: 1px #cc8d0f solid;
 	color: #cc8d0f;
@@ -74,4 +217,4 @@ font-family: Roboto Condensed;
     line-height: 1.7em;
     text-transform: none;
     color: #222;
-}
+} */
