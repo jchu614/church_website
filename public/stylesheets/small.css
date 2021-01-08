@@ -88,6 +88,9 @@
 	.jumbo-image, #index-3, #about-image {
 		background-attachment: scroll;
 	}
+	.about-header {
+		font-size: 60px;
+	}
 	#about-image {
 		height: 480px;
 	}
@@ -217,6 +220,12 @@
 	}
 	#img-div-2 {
 		transform: translatey(-45vh);
+	}
+	#about-image2 {
+		background-attachment: scroll;
+	}
+	.belief-p {
+		font-size: 0.95em;
 	}
 }
 

@@ -1,71 +1,4 @@
-.about-body {
-	font-family: Lato;
-    font-size: 18px;
-    letter-spacing: .01em;
-    line-height: 1.7em;
-    text-transform: none;
-	color: #4a4a4a;
-}
-
-.about-item-header {
-	font-family: Roboto;
-	font-weight: 700;
-	letter-spacing: .15em;
-	font-size: 30px;
-	color: #4a4a4a;
-}
-
-.about-btn {
-	border: 1px #cc8d0f solid;
-	color: #cc8d0f;
-	font-family: Roboto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 12px;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-	margin: auto 7em 1em;
-}
-
-.about-btn:hover {
-	color: white;
-	background-color: #cc8d0f;
-}
-
-.about-buttons {
-	margin-top: 3em;
-	margin-bottom: 0;
-}
-
-.about-div {
-	height: 250px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
-.about-div button {
-	border: none;
-	background-color: transparent;
-	width: 100%;
-	height: 100%;
-	outline: none;
-}
-
-.about-div button:hover {
-	transform: scale(1.13);
-	opacity: .8;
-	transition: .24s ease-in-out;
-}
-
-.about-div-plus {
-	height: 300px;
-	width: 100%;
-}
-
-
-#about-header {
+.about-header {
 	font-family: Roboto Condensed;
     font-weight: 700;
     font-style: normal;
@@ -73,7 +6,7 @@
     letter-spacing: .03em;
     line-height: 1em;
     text-transform: uppercase;
-	color: #A9A9A9;
+	color: #f6f6f6;
 }
 
 #about-header-2 {
@@ -88,36 +21,93 @@
 	padding-top: 8em;
 }
 
-#about-header-3 {
-	font-family: Roboto;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 55px;
-    letter-spacing: .15em;
-    line-height: 1.2em;
-    text-transform: uppercase;
-	text-align: center;
-	margin-bottom: 1.5em;
-	margin-top: 1.5em;
-	color: #4a4a4a;
+/* BELIEF BOX */
+.belief-box {
+	padding: 0;
+	height: 50vh;
+	overflow: hidden;
+}
+
+.belief-box img {
+	padding: 1%;
+	height: auto;
+	width: 100%;
+	z-index: -1;
+	position: relative;
+	filter: brightness(90%);
+	overflow: hidden;
 }
 
 #about-image {
 	padding: 0;
-	background: url("https://live.staticflickr.com/8068/8240341255_4384271520_b.jpg") top right no-repeat;
+	background: url("https://live.staticflickr.com/640/21048525831_ef67889936_b.jpg") top right no-repeat;
 	background-size: 99.99%;
 	background-position: center;
 	background-attachment: fixed;
 	margin-bottom: 0;
 	height: 600px;
+	filter: brightness(90%);
+}
+#about-image2 {
+	padding: 0;
+	background: url("https://live.staticflickr.com/3771/11481464844_e7595f7f90_b.jpg") top right no-repeat;
+	background-size: 140%;
+	background-position: top;
+	background-attachment: fixed;
+	margin-bottom: 0;
+	height: 350px;
+	overflow: hidden;
+	filter: brightness(95%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.about-div-alt {
-	background-color: #B0B0B0;
+.belief-text {
+	height: 100%;
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+	letter-spacing: .13em;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.belief-p {
+	padding: 10px 14px;
+	font-size: 1.1em;
+	font-family: "Lato", sans-serif;
+	color: white;
+	opacity: 0;
+}
+.text-container {
+	height: 100%;
+	width: 100%;
+	background: none;
+	background-attachment: fixed;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.image-container {
+	height: 100%;
+	width: 100%;
+	position: absolute;
 }
 
-.about-item-deco {
-	height: 200px;
-	padding: 2em;
-	padding-top: 0;
+.belief-box:hover > .image-container {
+	transform: scale(1.1);
+	filter: brightness(40%) blur(4px);
+	transition: .2s ease;
+}
+.belief-box:hover > .text-container h2 {
+	transform: scale(1.1);
+	filter: brightness(50%) blur(5px);
+	transition: .2s ease;
+}
+.belief-box:hover > .text-container p {
+	opacity: 1;
+	transition: .2s ease;
 }

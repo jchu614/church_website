@@ -48,7 +48,7 @@
 
 .overlay-image:hover .text {
 	opacity: 1;
-	transition: .2 ease;
+	transition: .2s ease;
 }
 
 .text {
