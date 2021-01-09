@@ -92,7 +92,7 @@
 	justify-content: center;
 }
 .text-container p {
-	transform: scale(0.5);
+	transform: scale(0.85);
 }
 .image-container {
 	height: 100%;
