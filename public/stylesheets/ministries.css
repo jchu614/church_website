@@ -155,7 +155,7 @@
     text-transform: uppercase;
 	text-align: center;
 	color: #4E4E4E;
-	transform: translatey(-50px);
+	transform: translatey(-10px);
 }
 .header-spec {
 	font-size: 3.5em;

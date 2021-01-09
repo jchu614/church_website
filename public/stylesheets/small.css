@@ -55,6 +55,9 @@
 		text-align: left;
 		padding-left: 3vw;
 	}
+	.ministry-head {
+		transform: translatey(-50px);
+	}
 }
 
 @media (max-width: 990px) {
