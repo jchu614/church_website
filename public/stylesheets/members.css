@@ -1,82 +1,167 @@
+.member-container-big {
+	height: 80vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.member-col-1 {
+	width: 50%;
+	padding: 5px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Roboto Condensed", sans-serif;
+	letter-spacing: .13em;
+	text-transform: uppercase;
+	color: white;
+	text-shadow: -2px -1px 4px rgba(150, 150, 150, 1);
+	background: url("https://wallpaperaccess.com/full/2065685.jpg") top right no-repeat;
+	background-position: center;
+}
+.member-col-2 {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.member-row-1, .member-row-2 {
+	height: 50%;
+	width: 100%;
+}
+.member-row-1 {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	padding: 5px;
+	background: url("https://i2.wp.com/www.animasoul.org/wp-content/uploads/2017/10/community-group.jpg?fit=950%2C534&ssl=1") top right no-repeat;
+	background-position: center;
+}
+.link-box {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.link-box > a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	color: #f6f6f6;
+	padding-top: 15vh;
+	font-size: 2em;
+	font-family: "Roboto Condensed", sans-serif;
+	text-shadow: -2px -1px 4px rgba(150, 150, 150, 1);
+	opacity: 0;
+}
+
+.landing-image-container {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.member-text {
+	height: 100%;
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	letter-spacing: .13em;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-shadow: -2px -1px 4px rgba(150, 150, 150, 1);
+}
+.member-row-2 {
+	position: relative;
+	background: url("https://www.mckinley-church.org/wp-content/uploads/2014/08/4543063042_6fdfde32e4_b.jpg") top right no-repeat;
+	background-position: center;
+}
+.member-row-1:hover > p {
+	filter: blur(7px) brightness(85%);
+	transition: .25s ease;	
+}
+.member-row-2:hover > h2 {
+	filter: blur(7px) brightness(85%);
+	transition: .25s ease;
+}
+.member-row-2:hover > .link-box > a {
+	text-decoration: none;
+	transform: scale(1.2);
+	opacity: 1;
+	transition: .25s ease;
+}
+.member-row-1:hover > .link-box > a {
+	text-decoration: none;
+	transform: scale(1.2);
+	opacity: 1;
+	transition: .25s ease;
+}
+
+/* BLOG LISTINGS */
 .members {
 	font-family: Lato;
 	text-align: center;
+	padding-top: 16vh;
+	background-color: #f9f9f9;
 }
 
-.members h1 {
-	margin: 25px auto;
-	letter-spacing: .17em;
-	font-size: 50px;
-}
 .items {
 	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row-reverse;
+	flex-direction: column-reverse;
 	justify-content: center;
 	align-items: center;
 	align-content: center;
 	margin: 0 20px;
 }
 
-.item-center {
-	display: flex;
-	justify-content: center;
+.item-container {
+	height: 100%;
+	width: 100%;
+	float: left;
 }
 
 .item {
-	width: 300px;
-	height: 340px;
+	width: 80vw;
+	height: 60vh;
 	overflow: hidden;
-	background-color: white;
-	margin-bottom: 20px;
-}
-.item img {
-	width: 300px;
+	margin: 6vh;
+	display: flex;
 }
 
 .overlay-image {
-	width: 300px;
-	height: 222px;
+	width: 60%;
+	height: 100%;
 	overflow: hidden;
 }
-
-.overlay-image:hover {
-	transform: scale(1.1);
-	opacity: .8;
-	transition: .2s ease;
+.overlay-image img {
+	width: auto;
+	height: 100%;
 }
 
-.overlay-image:hover .text {
-	opacity: 1;
-	transition: .2s ease;
-}
-
-.text {
-	font-family: Lato;
-	letter-spacing: .1em;
-	font-weight: 700;
-	text-transform: uppercase;
-	color: white;
-	transform: translate(0, 100px);
-	opacity: 0;
-	z-index: 2;
-	margin: 0;
+.blog-col {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 3.4vw;
 }
 
 .item-cap h4 {
-	padding-top: 25px;
-	padding-left: 19px;
-	padding-right: 19px;
 	text-align: left;
 	font-family: Roboto;
-	font-size: 14px;
-	font-weight: 600;
-	letter-spacing: .1em;
+	font-size: 1.6em;
+	font-weight: 400;
+	letter-spacing: .12em;
 }
 
 .message {
 	display: flex;
-	padding-left: 19px;
 	flex-direction: row;
 	justify-content: left;
 	text-align: left;
@@ -84,28 +169,49 @@
 	font-family: Lato;
 	margin-bottom: 10px;
 }
-
-.post-butt {
-	border: 2px white solid;
-	color: white;
-	width: 48%;
-	letter-spacing: .17em;
-	background-color: transparent;
-	font-family: Lato;
-	opacity: .8;
-	text-transform: uppercase;
-	margin-bottom: 2em;
+.body-blurb {
+	height: 15vh;
+	max-width: 25vw;
+	text-align: left;
+	font-size: .8em;
+}
+.body-blurb p {
+	overflow: hidden;
+	display: -webkit-box;
+	text-overflow: ellipsis;
+  	-webkit-line-clamp: 4;
+  	-webkit-box-orient: vertical;
+}
+.link-butt {
+	font-size: .8em;
+	text-align: left;
 }
 
-.post-butt:hover {
-	color: #f4f4f4;
-	background-color: #cc8d0f;
+/* EVEN ITEMS STYLING */
+.item-container:nth-child(even) {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.item-container:nth-child(even) .item-cap > h4 {
+	text-align: right;
 }
 
-#message-jumbo, #blogimg img {
-	background: url("/images/greyarrow.jpg") top right no-repeat;
-	background-size: 99.99%;
-	background-position: center;
-	background-attachment: fixed;
-	margin-bottom: 4em;
+.item-container:nth-child(even) .item {
+	flex-direction: row-reverse;
+}
+
+.item-container:nth-child(even) .blog-col {
+	align-items: flex-end;
+	margin-right: 3.4vw;
+}
+.item-container:nth-child(even) .item-cap > hr {
+	width: 75%;
+	text-align: right;
+	margin-right: 0;
+}
+.item-container:nth-child(odd) .item-cap > hr {
+	width: 75%;
+	text-align: left;
+	margin-left: 0;
 }

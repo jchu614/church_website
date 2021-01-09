@@ -91,6 +91,9 @@
 	align-items: center;
 	justify-content: center;
 }
+.text-container p {
+	transform: scale(0.5);
+}
 .image-container {
 	height: 100%;
 	width: 100%;
@@ -98,7 +101,6 @@
 }
 
 .belief-box:hover > .image-container {
-	transform: scale(1.1);
 	filter: brightness(40%) blur(4px);
 	transition: .2s ease;
 }
@@ -109,5 +111,6 @@
 }
 .belief-box:hover > .text-container p {
 	opacity: 1;
-	transition: .2s ease;
+	transform: scale(1);
+	transition: .35s ease;
 }

@@ -1,37 +1,72 @@
 <%- include("./partials/header") %>
-<header class="jumbotron mainpage-jumbo jumbo-image" id="message-jumbo">
-	<div class="container">
-		<h1 class="ministry-head top-head tshadow" id="mem-head">Member Message Board</h1>
-		<div class="text-center">
-			<a class="btn btn-lg post-butt tshadow" href="/messages/new">Post a New Member's Message</a>
+<div class="member-container-big">
+	<div class="member-col-1">
+		<h1>
+			<strong>Welcome to the 
+			<br>
+			Church Members' Page!!</strong>
+		</h1>
+	</div>
+	<div class="member-col-2">
+		<div class="member-row-1">
+			<div class="link-box">
+				<a href="/messages/5f8de9d14216500332e94931" style="z-index: 21;">Click Here for Rules!</a>
+			</div>			
+			<p class="member-text">
+				Please make sure to follow our rules and guidelines 
+				to make sure we can bless one another in an orderly
+				and Christ-like way! 
+			</p>
+		</div>
+		<div class="member-row-2">
+			<div>
+			</div>
+			<div class="link-box">
+				<a href="/messages/new" style="z-index: 21;">Post a New Blog Message</a>
+			</div>
+			<h2 class="member-text">
+				Come here with your thoughts!
+			</h2>
 		</div>
 	</div>
-</header>	
+</div>
+
+
+
 <div class="members">
-	<div class=" items row">
+	<div class=" items">-
 		<% bibles.forEach(function(message){ %>
-			<div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 item-center">
-				<div class="item thumbnail">
+			<div class="item-container">
+				<div class="item">
 					<div class="overlay-image">
-						<a href="/messages/<%= message._id %>" style="text-decoration: none;">
-							<div>
-								<p class="text tshadow">Read More</p>
-							</div>
-							<img src="<%= message.imageUrl %>">
-						</a>
+						<img src="<%= message.imageUrl %>">
 					</div>
-					<div class="item-cap">
-						<h4>
-							<%= message.header %>
-						</h4>
-						<hr style="width: 88%; margin-bottom: 8px;">
-					</div>
-					<div class="message">
-						<p>
-							<div>
-								By <%= message.author.username %>
-							</div>
-						</p>
+					<div class="blog-col">
+						<div class="item-cap">
+							<h4>
+								<%= message.header %>
+							</h4>
+							<hr>
+						</div>
+						<div class="message">
+							<p>
+								<div>
+									By <%= message.author.username %>
+								</div>
+							</p>
+						</div>
+						<div class="body-blurb">
+							<p>
+								<%= message.body %>
+							</p>
+						</div>
+						<div>
+							<a href="/messages/<%= message._id %>" style="text-decoration: none;">
+								<div>
+									<p class="link-butt">READ MORE ></p>
+								</div>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -1,18 +1,4 @@
-@media (max-width: 1315px) {
-	.item, .item img, .overlay-image {
-		width: 260px;
-	}
-	.item {
-		height: 300px;
-	}
-	.overlay-image {
-		height: 172px;
-	}
-}
 @media (max-width: 1263px) {
-	.about-item-deco {
-		height: 240px;
-	}
 	.join-p {
 		font-size: 1.5em;
 		transform: translatey(-5vh);
@@ -100,13 +86,6 @@
 	#index-note {
 		margin-top: 20px;
 	}
-	.about-item-header {
-		font-size: 26px;
-	}
-	.about-item-deco {
-		height: 270px;
-		font-size: 15px;
-	}
 	.green-quotes {
 		padding: 60px 0;
 	}
@@ -114,11 +93,7 @@
 		font-size: 1.4em;
 	}
 }
-@media (max-width: 830px) {
-	.about-item-header {
-		font-size: 22px;
-	}
-}
+
 @media (max-width: 768px) {
 	#index-4 {
 		height: 450px;
@@ -162,9 +137,6 @@
 	#index-3 p {
 		font-size: 17px;
 	}
-	.min-buttons {
-		margin-bottom: 4px;
-	}
 	#about-header {
 		font-size: 66px;
 	}
@@ -180,9 +152,6 @@
 }
 
 @media (max-width: 767px) {
-	.item, .item img, .overlay-image {
-		width: 400px;
-	}
 	.join-text {
 		margin-top: 5px;
 		font-size: 40px;
@@ -227,6 +196,18 @@
 	.belief-p {
 		font-size: 0.95em;
 	}
+	.member-col-1 h1 {
+		font-size: 2em;
+	}
+	.link-box a {
+		font-size: 1.6em;
+	}
+	.blog {
+		transform: translate(0, 0);
+	}
+	.blog-title {
+		padding-top: 13vh;
+	}
 }
 
 @media (max-width: 616px) {
@@ -236,10 +217,6 @@
 	#index-3 h1 {
 		margin-top: 16px;
 		font-size: 42px;
-	}
-	.about-item-deco {
-		height: 310px;
-		font-size: 12px;
 	}
 }
 
