@@ -47,6 +47,11 @@
 	height: 116px;
 }
 
+#navlinks a:hover {
+	text-decoration: none;
+	color: #3F3B3B;
+}
+
 .dropdown-menu-center {
   left: 50% !important;
   right: auto !important;
