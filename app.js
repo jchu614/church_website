@@ -73,17 +73,6 @@ app.get("/about", function(req, res){
 	res.render("about");
 });
 
-app.get("/resources", function(req, res){
-	res.render("resources");
-});
-
-app.get("/visit", function(req, res){
-	res.render("visit");
-});
-
-app.get("/give", function(req, res){
-	res.send("GIVE ME YOUR MUNNY FOR BLACKJACK AND HOOKERS");
-})
 
 
 // ===========================
